@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>      
+    <link rel="stylesheet" href="style_land.css" type="text/css">
+    <title>BAF_LANDING_PAGE</title>
+
+    <script src='main.js'></script>
+</head>
+<body style="background-color: black;">
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo" title="BAF-Logo"><img src="./images/icon_BAF.jpg" style="width:100%;"></a>
+                <ul style="padding-right:4%;">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">SIGNUP</a></li>
+                </ul>
+        </header>
+    
+    
+    <div class="content" style="width:100%;">
+        <div class="textbox"><h2>It's not just someone<br>It's a <span>FRIEND</span></h2><p>lorem ipsum sample text <br> nvjhvhefvjhvbovsdjnodsivjc<br>cjvivjb<br>bvfufbserybvowr8yvbwuvy<br>bevod</p>
+        <a href='#'>LEARN MORE ABOUT US</a></div>
+    <div class="imgbox"><img src="./result4.png" class="starbucks"></div>
+</div>
+<ul class="thumb">
+    <li><img src="result2.png" onclick="imgSlider('result2.png'); changecirclecolor('#fbfcfa')"></li>
+    <li><img src="result4.png" onclick="imgSlider('result4.png'); changecirclecolor('#ab7e4c')"></li>
+    <li><img src="result5.png" onclick="imgSlider('result5.png'); changecirclecolor('#6c85bd')"></li>
+</ul>
+<ul class="sci" style="ALINK:BLACK; height:40%;">
+    <li><a href="#">SAMPLE LINK</a></li>
+    <li><a href="#">SAMPLE LINK</a></li>
+    <li><a href="#">SAMPLE LINK</a></li>
+</ul>
+</section>
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.starbucks').src=anything;
+    }
+    function changecirclecolor(color){
+        const circle=document.querySelector('.circle');
+        circle.style.background= color
+        const span =document.querySelector('.span');
+       span.style.background= color
+    }
+    function changeFRIEND(color){
+        document.querySelector('.span');
+        span.style.color= color;
+    }
+</script>
+</body>
+</html>
